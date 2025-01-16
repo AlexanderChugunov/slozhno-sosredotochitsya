@@ -1,5 +1,112 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
-.page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+/* Общие стили */
+.content{
 }
+.page {
+  min-inline-size: 375px;
+  background-color: #000028;
+  height:10000px;
+}
+
+/* Стили заголовка */
+.header {
+  background-repeat: no-repeat;
+  background-size: contain;
+ 
+  height: min(100vi, 768px);
+  background-image: url(/images/cover-image-dark.png);
+}
+.decorated-zone {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px 0;
+}
+
+/* Навигация */
+.header__theme-menu {
+  display: flex;
+  justify-content: center;
+  margin-top: -30px;
+  /* padding-right: 375px; */
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: row;
+  gap:10px;
+
+}
+@media (max-width: 768px) {
+  .header__theme-menu-list{
+    flex-direction: column;
+  }
+  .header__theme-menu{
+    margin-top: 100px;
+    justify-content: right;
+  }
+}
+.header__theme-menu-item {}
+
+/* Кнопки */
+.header__theme-menu-button {
+  font-family: IBM Plex Mono;
+font-size: 18px;
+  border: none;
+  background-color: inherit;
+  color: #FF0070;
+}
+.header__theme-menu-button_type_light {
+  
+}
+.header__theme-menu-button_active {
+  border: 1px solid#FF0070;
+  pointer-events: none
+}
+.header__theme-menu-button_type_auto {
+  /* border: 1px solid inherit; */
+}
+.header__theme-menu-button_type_dark {
+  /* border: 1px solid inherit; */
+}
+
+/* ТУТ БЕТОННО ЧЕ-ТО НЕ ТО начало*/
+.camera_effect{
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+.camera_REC{
+  margin-top: 10px;
+  font-family: IBM Plex Mono;
+  font-size: 18px;
+  font-weight: 400;
+  color:#FF0070;
+}
+.circle_with_up_stick{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.camera_stick_up {
+  display: flex;
+  width: 25px;
+  height: 1px;
+  background-color: #FF0070;
+}
+.camera_circle{
+     margin-top: 7px; /*отступ круга от верхней палки */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    background-color:#FF0070;
+    border-radius: 50%;
+    box-shadow:  rgba(255, 3, 3, 0.3); 
+}
+.camera_stick_right{
+  width: 1px;
+  height: 25px;
+  background-color: #FF0070;
+}
+/* ТУТ БЕТОННО ЧЕ-ТО НЕ ТО  конец*/
