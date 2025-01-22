@@ -11,10 +11,13 @@
   --text-color: #f1b2ce;
   --decor-color: #000028;
   
+  --default-color:#FF0070;
   --paragraph-back:#000028;
   --button-color:#FF0070;
   --angel-color:#FF0070;
+  --paragraph-text:#000028;
 
+  --p-text-color:#F1B2CE;
   --bg-img: url(../images/cover-image-dark.png);
 }
 

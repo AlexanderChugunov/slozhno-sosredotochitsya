@@ -182,6 +182,9 @@ font-weight: 700;
     min-width: 364px;
     height: 117px;
   }
+  .first_paragraphs{
+    grid-template-columns: 1fr;
+  }
 }
 @media (max-width: 375px) {
   .header__title{
@@ -197,4 +200,40 @@ font-weight: 700;
   .header__paragraph{
     min-width: 355px;
   }
+  .sections_paragraph{
+    padding-top:40px;
+    gap:50px;
+  }
+  .first_paragraphs{
+    grid-template-columns: 1fr;
+  }
+}
+.sections_paragraph{
+  display: flex;
+  flex-direction: column;
+  padding-top:60px;
+  gap:80px;
+}
+.p_title{
+font-family: IBM Plex Mono;
+font-size: 18px;
+font-weight: 700;
+color: var(--default-color);
+}
+.p_title-with-background{
+  color:var(--paragraph-text);
+  background-color: var(--accent-color);
+}
+.p_text{
+  font-family: IBM Plex Mono;
+font-size: 18px;
+font-weight: 400;
+color: var(--p-text-color);
+
+
+}
+.first_paragraphs{
+  display: grid;
+  gap:20px;
+  grid-template-columns: 315px 1fr;
 }
