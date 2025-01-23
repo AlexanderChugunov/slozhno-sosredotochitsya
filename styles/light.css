@@ -11,9 +11,14 @@
   --decor-color: #fff1f7;
   --text-shadow: #32312d;
 
+  --default-color:#353430;
   --paragraph-back:#353430;
   --button-color:#353430;
   --angel-color:#353430;
+  --paragraph-text:#353430;
+
+  --p-text-color:#353430;
+
   --bg-img: url(../images/cover-image-light.png);
 }
 
