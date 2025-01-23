@@ -167,7 +167,35 @@ font-weight: 700;
   background-color: var(--angel-color);
   margin-top: 25px;
 }
+.sections_paragraph{
+  display: flex;
+  flex-direction: column;
+  padding-top:60px;
+  gap:80px;
+}
+.p_title{
+font-family: IBM Plex Mono;
+font-size: 18px;
+font-weight: 700;
+color: var(--default-color);
+}
+.p_title-with-background{
+  color:var(--paragraph-text);
+  background-color: var(--accent-color);
+}
+.p_text{
+  font-family: IBM Plex Mono;
+font-size: 18px;
+font-weight: 400;
+color: var(--p-text-color);
 
+
+}
+.first_paragraphs{
+  display: grid;
+  gap:20px;
+  grid-template-columns: 315px 1fr;
+}
 @media (max-width: 768px) {
   .header__theme-menu-list{
     flex-direction: column;
@@ -207,33 +235,4 @@ font-weight: 700;
   .first_paragraphs{
     grid-template-columns: 1fr;
   }
-}
-.sections_paragraph{
-  display: flex;
-  flex-direction: column;
-  padding-top:60px;
-  gap:80px;
-}
-.p_title{
-font-family: IBM Plex Mono;
-font-size: 18px;
-font-weight: 700;
-color: var(--default-color);
-}
-.p_title-with-background{
-  color:var(--paragraph-text);
-  background-color: var(--accent-color);
-}
-.p_text{
-  font-family: IBM Plex Mono;
-font-size: 18px;
-font-weight: 400;
-color: var(--p-text-color);
-
-
-}
-.first_paragraphs{
-  display: grid;
-  gap:20px;
-  grid-template-columns: 315px 1fr;
 }
